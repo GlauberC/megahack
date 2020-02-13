@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react';
-import {MaterialIcons} from 'react-native-vector-icons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import {ErrGlobalMsg, ViewErrGlobalMsg} from '../../components/ErrMsg';
 
@@ -53,7 +53,7 @@ export default function SignIn({navigation}) {
     if (!email.match(/\w+@\w+/gi)) {
       setErrEmail('Digite um email válido');
     } else if (password.length >= 6) {
-      // Login
+      navigation.navigate('LoanOrInvestment');
     }
   }
   return (
