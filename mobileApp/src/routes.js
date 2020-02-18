@@ -9,6 +9,7 @@ import SignInScreen from './pages/SignInScreen';
 import SignUpScreen from './pages/SignUpScreen';
 import LoanOrInvestment from './pages/LoanOrInvestment';
 import Investiments from './pages/Investiments';
+import Loan from './pages/Loan';
 
 const Stack = createStackNavigator();
 
@@ -52,6 +53,22 @@ export default function Route() {
         <Stack.Screen
           name="Investiments"
           component={Investiments}
+          options={{
+            headerRight: () => (
+              <PersonImage>
+                <MaterialIcons name="person" size={28} color={colors.prim1} />
+              </PersonImage>
+            ),
+            title: 'Fulano da Silva',
+            headerStyle: {
+              backgroundColor: colors.prim1,
+            },
+            headerTintColor: colors.sec1,
+          }}
+        />
+        <Stack.Screen
+          name="Loan"
+          component={Loan}
           options={{
             headerRight: () => (
               <PersonImage>

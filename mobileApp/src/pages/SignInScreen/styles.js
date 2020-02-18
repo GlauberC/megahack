@@ -22,9 +22,6 @@ export const TitleUp = styled.Text`
   text-transform: uppercase;
   font-weight: bold;
 `;
-export const TitleDown = styled(TitleUp)`
-  margin-left: 28px;
-`;
 export const SubTitle = styled.Text`
   font-size: 18px;
   color: ${colors.sec1};

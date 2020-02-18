@@ -19,6 +19,7 @@ export const Question = styled.Text`
   font-size: 28px;
   color: ${colors.prim1};
   align-self: flex-end;
+  margin: 0 40px;
 `;
 export const Block = styled.View`
   border-width: 2px;

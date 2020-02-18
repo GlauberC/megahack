@@ -8,7 +8,6 @@ import {
   Header,
   TitleView,
   TitleUp,
-  TitleDown,
   SubTitle,
   InputsView,
   Footer,
@@ -60,8 +59,7 @@ export default function SignIn({navigation}) {
     <Container>
       <Header>
         <TitleView>
-          <TitleUp>Nome do</TitleUp>
-          <TitleDown>App</TitleDown>
+          <TitleUp>Emerald</TitleUp>
         </TitleView>
         <SubTitle>O investimento de um é a esperança do outro</SubTitle>
       </Header>

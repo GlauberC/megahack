@@ -24,7 +24,7 @@ export default function LoanOrInvestment({navigation}) {
             <InvestimentName>Investimentos</InvestimentName>
           </InvestimentBlock>
         </InsideBlock>
-        <InsideBlock>
+        <InsideBlock onPress={() => navigation.navigate('Loan')}>
           <LoanBlock>
             <MaterialIcons
               name="compare-arrows"
